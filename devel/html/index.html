@@ -1,0 +1,933 @@
+
+<!DOCTYPE html>
+<html
+  lang="ja"
+  data-avail-langs="ja en"
+
+  data-page="index"
+  data-static-domain="https://blog.st-hatena.com"
+  data-blog="furoshiki.hatenadiary.jp"
+  data-blogs-uri-base="http://furoshiki.hatenadiary.jp"
+  data-globalheader-color="b"
+  data-globalheader-type="pc"
+  data-author="furoshiki0223"
+  data-version="60d01f8cf9461f7a49d5085e3886b175"
+  data-blog-comments-top-is-new=""
+  data-device="pc"
+
+  
+
+  data-admin-domain="http://blog.hatena.ne.jp"
+
+  data-brand="hatenablog"
+
+
+  data-has-touch-view="1"
+  
+
+  itemscope
+   itemtype="http://schema.org/Blog"
+
+  >
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+    
+    
+    
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=7; IE=9; IE=10; IE=11" />
+    <title>ふろしき.js</title>
+
+    
+
+    
+      <link rel="canonical" href="http://furoshiki.hatenadiary.jp/"/>
+    
+
+    <meta itemprop="name" content="ふろしき.js"/>
+    
+      <meta itemprop="image" content="https://blog.st-hatena.com/images/theme/og-image-1500.gif"/>
+    
+
+    <meta property="og:title" content="ふろしき.js"/>
+    <meta property="og:type" content="blog"/>
+    <meta property="og:url" content="http://furoshiki.hatenadiary.jp/"/>
+    
+      <meta property="og:image" content="https://blog.st-hatena.com/images/theme/og-image-1500.gif"/>
+    
+      <meta property="og:description" content="エンタープライズITを支える、Web技術とモバイルの今を追う専門ブログ！" />
+    <meta property="og:site_name" content="http://furoshiki.hatenadiary.jp/"/>        <meta name="twitter:card"   content="gallery" />
+        <meta name="twitter:image0" content="http://cdn-ak.f.st-hatena.com/images/fotolife/f/furoshiki0223/20150101/20150101231947.jpg" />
+        <meta name="twitter:image1" content="http://cdn-ak.f.st-hatena.com/images/fotolife/f/furoshiki0223/20150101/20150101235229.jpg" />
+        <meta name="twitter:image2" content="http://cdn-ak.f.st-hatena.com/images/fotolife/f/furoshiki0223/20150101/20150101235728.jpg" />
+        <meta name="twitter:image3" content="http://cdn-ak.f.st-hatena.com/images/fotolife/f/furoshiki0223/20150101/20150102010627.jpg" />      <meta name="twitter:title" content="ふろしき.js" />      <meta name="twitter:description" content="エンタープライズITを支える、Web技術とモバイルの今を追う専門ブログ！" />      <meta name="twitter:app:name:iphone" content="はてなブログアプリ" />
+      <meta name="twitter:app:id:iphone" content="583299321" />
+      <meta name="twitter:app:url:iphone" content="hatenablog:///open?uri=http%3A%2F%2Ffuroshiki.hatenadiary.jp%2F" />      <meta name="twitter:site" content="@kawada_hiroshi" />        <meta name="description" content="エンタープライズ活用できるHTML5などのWeb技術について情報発信します。新規性よりも、実用性を重視します。">        <meta name="google-site-verification" content="ptzJo-q9UD4n6aiB9LUTuo7GLMh7W-ltT44aNpuhv84">        <meta name="keywords" content="HTML5 Web IE エンタープライズ Microsoft Oracle Java .NET Sencha IE11">        <meta name="msvalidate.01" content="93130A690211A28533C362C3D764C1DE">
+      <link rel="author" href="https://plus.google.com/+HiroshiKAWADA">
+    
+
+    
+<script type="text/javascript">
+// <!--
+
+if (~navigator.userAgent.indexOf('Mac OS X')) {
+  document.write('<style type="text/css">html, body { font-family: \x27Helvetica\x27, \x27Arial\x27, \x27ヒラギノ角ゴ Pro W3\x27, \x27Hiragino Kaku Gothic Pro\x27, sans-serif; } </style>');
+} else {
+  document.write('<style type="text/css">html, body { font-family: \x27Helvetica\x27, \x27Arial\x27, \x27メイリオ\x27, \x27Meiryo\x27, \x27MS PGothic\x27, sans-serif; } </style>');
+}
+
+// -->
+</script>
+
+<!--[if lt IE 9]>
+<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!--[if IE]>
+<script type="text/javascript" src="https://blog.st-hatena.com/js/vendor/excanvas/excanvas.js?version=60d01f8cf9461f7a49d5085e3886b175"></script>
+<![endif]-->
+
+
+    <link rel="shortcut icon" href="http://cdn.image.st-hatena.com/image/favicon/82ef60d8bac1fcce43166e90c6f00a4ec614256f/version=1/http%3A%2F%2Fcdn.mogile.archive.st-hatena.com%2Fv1%2Fimage%2Ffuroshiki0223%2F297790991670447145.png">
+    <link rel="icon" sizes="192x192" href="http://cdn.image.st-hatena.com/image/square/0990e4ccf4e5828c7559eebb1137e005aac442b0/backend=imagemagick;height=192;version=1;width=192/http%3A%2F%2Fcdn.mogile.archive.st-hatena.com%2Fv1%2Fimage%2Ffuroshiki0223%2F297790991670447145.png">
+    <link rel="alternate" type="application/atom+xml" title="Atom" href="http://furoshiki.hatenadiary.jp/feed"/>
+    <link rel="alternate" type="application/rss+xml" title="RSS2.0" href="http://furoshiki.hatenadiary.jp/rss"/>
+
+      <link rel="author" href="http://www.hatena.ne.jp/furoshiki0223/">
+    
+
+      <link rel="stylesheet" type="text/css" href="https://blog.st-hatena.com/.shared.css:60d01f8cf9461f7a49d5085e3886b175:/css/theme/base.css,/css/prettify.css,/css/globalheader.css?version=60d01f8cf9461f7a49d5085e3886b175"/>
+      <link rel="stylesheet" type="text/css" href="common.css"/>    <script>    </script>
+
+    
+    <style>
+      div#google_afc_user,
+      div#google_afc_user_container_0,
+      div#google_afc_user_container_1,
+      div#google_afc_user_container_2,
+      div#google_afc_user_container_3,
+      div#google_afc_user_container_4,
+      div#google_afc_user_container_5,
+      div.google_afc_image,
+      div.google_afc_blocklink {
+          display: block !important;
+      }
+    </style>
+
+    
+  </head>
+
+  <body class="page-index  enable-top-editarea enable-bottom-editarea    ">
+    <!-- Google Universal Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-29716941-6', 'auto', {'name': 'HatenaBlogTracker'});
+  ga('HatenaBlogTracker.require', 'displayfeatures');
+  ga('HatenaBlogTracker.send', 'pageview');
+
+</script>
+<!-- End Google Universal Analytics -->
+
+    
+    <div id="header-container">
+     <div id="sp-suggest" style="display: none;"><a id="sp-suggest-link" href="#">スマートフォン用の表示で見る</a></div>
+    </div>
+
+    <div class="select_star_button_container" style="display: none;">
+      <img src="https://blog.st-hatena.com/images/theme/hatena-star-quote-box.png?version=60d01f8cf9461f7a49d5085e3886b175" title="引用スターをつける" class="select_star_button" />
+      <img src="https://blog.st-hatena.com/images/theme/hatena-star-quote-star.png?version=60d01f8cf9461f7a49d5085e3886b175" title="引用スターをつける" class="select_star_button select_star_star">
+    </div>
+
+    <div class="message-box" id="select-star-message-box" style="display: none;">
+      スターをつけました
+    </div>
+
+    <div id="globalheader-container" >
+  <iframe id="globalheader" height="37" frameborder="0" allowTransparency="true"></iframe>
+</div>
+
+
+    <div id="container">
+      <div id="container-inner">
+        <header id="blog-title" data-brand="hatenablog">
+  <div id="blog-title-inner" >
+    <h1 id="title"><a href="http://furoshiki.hatenadiary.jp/">ふろしき.js</a></h1>
+    
+      <h2 id="blog-description">エンタープライズITを支える、Web技術とモバイルの今を追う専門ブログ！</h2>
+    
+  </div>
+</header>
+
+        
+          <div id="top-editarea">
+            <div id="top-nav">
+
+  <a class="nav-item" href="http://furoshiki.hatenadiary.jp/entry/winxp_upgrade"><div>古いWebシステムの維持</div></a>
+  <a class="nav-item" href="http://furoshiki.hatenadiary.jp/entry/guideline"><div>新しいWebシステム開発</div></a>
+<a class="nav-item" href="http://furoshiki.hatenadiary.jp/archive/category/%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB"><div>企業向けモバイル</div></a>
+  <a class="nav-item" href="http://furoshiki.hatenadiary.jp/archive/category/OSS"><div>企業向けOSS</div></a>
+  <a class="nav-item" href="http://furoshiki.hatenadiary.jp/entry/2013/11/13/002812"><div>Webサイト制作TIPS</div></a>
+</div>
+
+<div id="social">
+
+
+  <div class="social-button" id="googlesearch">
+      <form class="search-form" role="search" action="/search" method="get">
+      <input type="text" name="q" class="search-module-input" value="" placeholder="Search">
+      <input type="submit" value="検索" class="search-module-button">
+    </form>
+  </div>
+  
+  <div class="social-button" id="googleplus">
+<div class="g-follow" data-annotation="bubble" data-height="20" data-href="//plus.google.com/114106538015186378536" data-rel="author"></div>
+<script type="text/javascript">
+  window.___gcfg = {lang: 'ja'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+</div>
+
+  <div class="social-button" id="facebook"><div class="fb-follow" data-href="https://www.facebook.com/hiroshi.kawada.758" data-width="180" data-height="19" data-colorscheme="light" data-layout="button_count" data-show-faces="true"></div></div>
+
+  <div class="social-button" id="twitter">
+<a href="https://twitter.com/kawada_hiroshi" class="twitter-follow-button" data-show-count="true" data-lang="ja"></a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+  </div>
+  <div class="social-button" id="feed">
+  <a href="http://furoshiki.hatenadiary.jp/feed">feed</a>
+  <style>
+      #feed>a {
+          display : block;
+          text-align : center;
+          width : 45px;
+          text-decoration : none;
+          color : #FFF;
+          font-size : 75%;
+          text-shadow : 
+            1px 1px 1px #000,
+            -1px 1px 1px #000,
+            1px -1px 1px #000,
+            -1px -1px 1px #000;
+          background-color : #3A3;
+          border-radius : 5px;
+          margin-top : 5px;
+          box-shadow : 0px 0px 3px #888;
+      }
+  </style>
+  </div>
+  <div class="social-button" id="rss">
+  <a href="http://furoshiki.hatenadiary.jp/rss">RSS</a>
+  <style>
+      #rss>a {
+          display : block;
+          text-align : center;
+          width : 40px;
+          text-decoration : none;
+          color : #FFF;
+          font-size : 75%;
+          text-shadow : 
+            1px 1px 1px #000,
+            -1px 1px 1px #000,
+            1px -1px 1px #000,
+            -1px -1px 1px #000;
+          background-color : #3A3;
+          border-radius : 5px;
+          margin-top : 5px;
+          box-shadow : 0px 0px 3px #888;
+      }
+  </style>
+  </div>
+  
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=197161527125727";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<style>
+.relationsTitle {
+    font-weight : bold;
+}
+.relations>ul {
+    list-style : none;
+    padding : 0 0;
+    margin : 0 0;
+}
+.relations>ul>li {
+    margin-bottom : 15px;
+  min-width : 200px;
+  display : block;
+}
+.relations>ul>li>.summary {
+  word-break : break-all;
+}
+.relations>ul>li>.summary>a {
+  display :block;
+  border-top : dotted 1px #AAA;
+  padding : 5px;
+  color: #042402;
+  font-size: 100%;
+  text-shadow: 1px 1px #FFF;
+}
+.relations>ul>li>.summary>a:hover {
+    color : #AAA;
+}
+.relations>ul>li>.summary>.content {
+  text-overflow:ellipsis;
+  overflow:hidden;
+  font-size : 75%;
+  text-height : 100%;
+  height : 38px;
+  padding-left: 10px;
+    padding-right: 10px;
+  color : #777;
+}
+.categories{margin-top:10px;}
+.entry-header{border-top:0;border-left:0;}
+.entry-title{padding-top:18px;}
+.entry-title>a{font-size:28px;font-weight:normal;text-shadow:0;letter-spacing:0.0em;line-height:125%;}
+.entry-title>a:hover{text-decoration:none;}
+
+</style>
+<div class="cssInner"></div>
+<script>
+$(document).ready(function(){
+    (function(){
+        $(".categories").find("a").each(function(){
+          var items = $(this).attr("href").split("/");
+          var keyword = items[items.length-1];
+            $(this).attr("href", "/archive/category/"+keyword );
+        });        
+    })();
+    $(".pager-next>a").text("次の記事 →");
+    $(".pager-prev>a").text("← 前の記事");
+});
+document.isLoaded = true;
+</script>
+          </div>
+        
+        
+
+
+
+
+<div id="content" class="hfeed"
+  
+  >
+  <div id="content-inner">
+    <div id="wrapper">
+      <div id="main">
+        <div id="main-inner">
+          
+            
+            <!-- google_ad_section_start -->
+            <!-- rakuten_ad_target_begin -->
+            
+              
+                <article class="entry hentry js-entry-article date-first autopagerize_page_element chars-6800 words-100 mode-hatena entry-odd" id="entry-8454420450078692075" data-keyword-campaign="" data-uuid="8454420450078692075">
+  <div class="entry-inner">
+    <header class="entry-header">
+      <div class="date first">
+        <a href="http://furoshiki.hatenadiary.jp/entries/2015/01/02" rel="nofollow">
+          <time pubdate datetime="2015-01-01T15:01:21Z" title="2015-01-01T15:01:21Z">
+            <span class="date-year">2015</span><span class="hyphen">-</span><span class="date-month">01</span><span class="hyphen">-</span><span class="date-day">02</span>
+          </time>
+        </a>
+      </div>
+      <h1 class="entry-title">
+        <a href="http://furoshiki.hatenadiary.jp/entry/2015/01/02/000121" class="entry-title-link bookmark">ただのエンジニアがメディアや技術雑誌に寄稿するようになって思ったこと - 2014年振り返り</a>
+      </h1>
+      
+      <div class="categories no-categories">
+        
+      </div>
+      
+
+      
+    </header>
+    <div class="entry-content">
+
+      
+        <p>2014年は、雑誌が6件にオンラインメディアが20件以上、セミナーや勉強会、カンファレンスでの登壇が30件弱と、思いのほか多くの機会に恵まれました。また、2件ほどのコミュニティの設立に協力したり、少しばかり大きめのイベントも5件ほど企画と運営に関わったり、認定試験の問題を作ったり。また4月からは、こうした活動が本業の方にも響いてきて、自分でも驚くほど良い方向へと好転しました。</p><p>思えば、2012年10月、仕事にプライベート、色んな事が上手くいってなかった当時の私が「これ以上今の状態が続くと、人生積むんじゃね！？」なんて将来を悲観し、追い込まれるような形とはいえ腹をくくったのが大きかったのでしょう。それまで「雑誌に記事書くとか何それ？そんなの一生来ないだろう！」みたいなノリでふわふわと生きていたのですが、脳の恐怖感知センサーが故障してからというもの、ありがたいことに、チャンスが向こうからやってくるという状態がずっと続きました。一歩を踏み出す勇気、とても大事なんですね！</p><p>2015年は、こうも簡単にはいかないのでしょう。なんとなくですが、ピークが去った感じもしていますので、このタイミングで一度、「<b>2年前まで普通のサラリーマン的ノリでエンジニアをやっていた私が、技術者向けのイベントを作ったり、技術系の雑誌やメディアに寄稿するようになって思ったこと</b>」というテーマで、2014年を振り返るような形で共有してみようかと思います。<br />
+<br />
+</p>
+
+<div class="section">
+    <h3>1月〜3月：カンファレンスを企画し運営した</h3>
+    <p><img src="http://cdn-ak.f.st-hatena.com/images/fotolife/f/furoshiki0223/20150101/20150101231947.jpg" style="float:right;margin-left:10px;max-width:300px;"><a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A8%A5%F3%A5%BF%A1%BC%A5%D7%A5%E9%A5%A4%A5%BA">エンタープライズ</a>特化の<a class="keyword" href="http://d.hatena.ne.jp/keyword/HTML5">HTML5</a>のお祭りをしてみたいと思い、2月28日「<a href="http://conference.html5biz.org/2014spring/">HTML5 x Enterprise Web Application Conference 2014</a>」というやたら長い名前のカンファレンスを主催してみました。</p><p>運営費をできるだけ下げようと<a href="http://www.ospn.jp/">&#x30AA;&#x30FC;&#x30D7;&#x30F3;&#x30BD;&#x30FC;&#x30B9;&#x30AB;&#x30F3;&#x30D5;&#x30A1;&#x30EC;&#x30F3;&#x30B9;</a>の主催である<a href="http://begi.net/">&#x682A;&#x5F0F;&#x4F1A;&#x793E;&#x3073;&#x304E;&#x306D;&#x3063;&#x3068;</a>様に相談したところ、400〜600名程度の規模だと60〜80万円程度の<a class="keyword" href="http://d.hatena.ne.jp/keyword/%BB%F1%B6%E2">資金</a>調達が必要であることがわかり、人生初の企業相手としたスポンサー営業を経験しました。勉強会で動くお金なんて微々たるものだったので、これは良い経験です。</p><p>自分の持っている技術をお金に変えるというのには慣れていても、イベントをお金の価値として売り込むというのは初体験です。自分がイベントを作っていける、信頼できる人間であるという証明をしなくてはいけなくなって、ここで初めて「自己の<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D6%A5%E9%A5%F3%A5%C7%A5%A3%A5%F3%A5%B0">ブランディング</a>」というのを意識しました。頑張っているアピールをすることがダサいと思われる国に生きる私にとって、自分の価値を人に説明するというのはなかなか慣れないものです！日本の就職業界は、第三者たるエージェントの力が必須なんじゃないでしょうか！？</p><p>企業のお金が動くイベントというのは、お客様は参加者だけでなく企業も加わります。企業の提供する価値と、参加者の望んでいることを、上手く繋いで双方が満足するようにイベントをデザインすることが求められます。また、そのイベントに来たいと思っている人に、イベントの存在が伝わるようPRも行なっていかなくてはいけません。ある程度の集客数が確保されるよう、コンテンツを調整することも多々あります。</p><p>このあたりの前提をクリアした上で、本当に実現したいことをイベントの企画に乗せていかなくてはいけないわけですが、いかんせん、技術屋しかやってこなかった自分には、新鮮な体験でした。イベントは成功という形で終わりとても嬉しいです。こんなヨロヨロの状態の代表に、最後まで付いてきて下さったスタッフのみなさんには、本当の本当に感謝しています。</p><p>2月には「<a href="http://event.shoeisha.jp/detail/111/">Developers Summit 2014</a>」という<a class="keyword" href="http://d.hatena.ne.jp/keyword/%E6%C6%B1%CB%BC%D2">翔泳社</a>主催のカンファレンスも開かれてまして、こちらではステアリング・コミッティという形で参加させて頂きました。また、夏には「<a href="http://event.shoeisha.jp/devsumi/20140731/">Developers Summit 2014 Summer</a>」というイベントが開かれ、こちらはセッションの司会として関わらせて頂きました。どちらも、スポンサー色が強いセッションを担当したのですが、自分のやりたいことを実現する余裕を持たせつつ企画を実現できたというのは、やはり自分でカンファレンスの主催をしたという経験が大きかったからなのでしょう。</p><p>「企業の宣伝なんてききたくねー！」なんて方。特に<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%AE%A1%BC%A5%AF">ギーク</a>な方には多いように見えますが、聞いて下さい！スポンサーがいないと、イベントが開けないし媒体も維持できません！そうなると、情報発信を行う場が作れなくなります！怒っちゃダメです！…ただし、あなたの感性は決して間違っているとは思っていません！</p><p>だいたい、これだけ情報飽和な時代に、いかにもなセールス風のセッションをすること自体が時代錯誤でおかしいのです。ただ、このあたりの認識はどこも持っていまして、多くの製品ベンダが<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A8%A5%D0%A5%F3%A5%B8%A5%A7%A5%EA%A5%B9%A5%C8">エバンジェリスト</a>を育成していたり、イベント主催側も発表を良くしようとスポンサー相手であってもかまわずツッコミを入れたりとかしてて、改善されつつもあります。メッセージの発し方に注意が求められる、面白い時代になりましたね。<br />
+<br />
+</p>
+
+</div>
+<div class="section">
+    <h3>4月〜7月：雑誌/メディアに寄稿しまくった</h3>
+    <p><img src="http://cdn-ak.f.st-hatena.com/images/fotolife/f/furoshiki0223/20150101/20150101235229.jpg" style="max-width:300px;float:right;margin-left:10px;" />4月はIE6のEOLが大事件で、「<a href="https://codeiq.jp/magazine/2014/04/8576/">&#x611B;&#x3068;&#x618E;&#x3057;&#x307F;&#x306E;IE6&#x2500;&#x2500;&#x5F53;&#x6642;&#x306E;IE&#x958B;&#x767A;&#x8005;&#x3068;&#x73FE;&#x958B;&#x767A;&#x8005;&#x304C;&#x672C;&#x97F3;&#x3068;&#x601D;&#x3044;&#x51FA;&#x3092;&#x8A9E;&#x308A;&#x5408;&#x3046;(CodeIQ Magagize)</a>」がバズったところからスタートしました。また以前より、<a class="keyword" href="http://d.hatena.ne.jp/keyword/Microsoft">Microsoft</a>主催のイベントには登壇することがあったのですが、4月より「<a href="http://mvp.microsoft.com/en-us/default.aspx">Microsoft MVP Internet Explorer 2014</a>」を受賞し、正式ルート(?)から依頼が入ってくるようになりました。この頃から、<a class="keyword" href="http://d.hatena.ne.jp/keyword/Microsoft">Microsoft</a>さんとどっぷりお付き合いが始まります。</p><p>この時期は、雑誌「<a href="http://gihyo.jp/magazine/SD">Software Design(&#x6280;&#x8853;&#x8A55;&#x8AD6;&#x793E;)</a>」の連載を行いつつ、「<a href="http://html5exam.jp/">HTML5&#x8A8D;&#x5B9A;&#x8A66;&#x9A13;(LPI-Japan)</a>」の問題作成も月1ペースの締め切りに追われつつ、週1本ペースで<a href="http://www.atmarkit.co.jp/">&#xFF20;IT</a>や<a href="http://www.sbbit.jp/">&#x30D3;&#x30B8;&#x30CD;&#x30B9;+IT</a>などのオンラインメディアの記事を寄稿するという状態でした。平行して、「<a href="https://atnd.org/events/51539">Apache Cordova&#x30B9;&#x30FC;&#x30D1;&#x30FC;&#x52C9;&#x5F37;&#x4F1A;</a>」や「<a href="http://www.htmlday.jp/">htmlday</a>」といったコミュニティのイベントにもそこそこ関わっていたり、「<a href="http://perf.html5j.org/">html5j&#x30D1;&#x30D5;&#x30A9;&#x30FC;&#x30DE;&#x30F3;&#x30B9;&#x90E8;</a>」の立ち上げを行なったり、「<a href="https://www.google.com/events/io">Google I/O 2014</a>」に行ったりで、寝る暇のない充実した日々が続きました。</p><p>とあるライターのコミュニティでは、一日10KB(5,000文字)書けたらなんとか食っていけるという話になっていますが、この時期の私は兼業でありながら倍近くのテキストを書いていました。テキストを効率的に校正するためのJSライブラリなんかを開発して、文章を<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%C7%A5%D0%A5%C3%A5%B0">デバッグ</a>する感覚で、工場みたいに文章を吐き出していたわけです。すごく鍛えられているという感じがしました。</p><p>様々な媒体や色んな形のコンテンツとして情報を発信していくうちに、発信することの責任について深く考えるようになりました。このブログ「ふろしき.js」も、かつては1万人、10万人に読まれるようなコンテンツを発信していたわけですが、その責任は私一人だけです。それが、メディアや雑誌となると、それだけでメシを食っている色んな方々のコンセンサスを得なくてはいけません。同じ10万人の読者がいたとしても、それを取り巻く利害関係者の数は圧倒的に違うわけです。</p><p>こうした中で、おおよそどの記事であっても共通していたのは、記事から読者が「何を持ち帰るのか」を重視するところ。加えて私は、読者のコンテキストの中で、その情報をどのようにアレンジすれば読者にとっての価値へと変わるのかを、強く意識するようになりました。ググって流入する人が多いブログと、購入した後で内容を読む人が大半の雑誌とでは、同じ情報も見せ方が変わってくるのです。UXを学んでいたら、そりゃまぁ知ってて当然だろうとツッコミを入れられそうですが。</p><p>情報の発信について、一通りの悩み(<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C4%CC%B2%E1%B5%B7%CE%E9">通過儀礼</a>みたいなもの)が終わったところで、今度は<a class="keyword" href="http://d.hatena.ne.jp/keyword/NDA">NDA</a>地獄に悩まされるようになりました。この時期、<a class="keyword" href="http://d.hatena.ne.jp/keyword/Microsoft%20MVP">Microsoft MVP</a>に加えて、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%CA%A3%BF%F4">複数</a>の企業と<a class="keyword" href="http://d.hatena.ne.jp/keyword/NDA">NDA</a>を結んで秘密の情報を得るようになったのですが、色んな事を知れば知るほど、どんどん口が開きにくくなるという状況に陥っていました。<a class="keyword" href="http://d.hatena.ne.jp/keyword/Microsoft">Microsoft</a>の話をしようとする都度、わざわざググって<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A8%A5%D0%A5%F3%A5%B8%A5%A7%A5%EA%A5%B9%A5%C8">エバンジェリスト</a>のツイートやらブログを漁り公開可能かを確認しなくてはいけない。(これは割とMVP内でも問題視されているみたいです)</p><p>世の中、喋っちゃいけないことが割と多い。<a class="keyword" href="http://d.hatena.ne.jp/keyword/Microsoft%20MVP">Microsoft MVP</a>になって以降、数件の記事の公開のみで、ほとんどの<a class="keyword" href="http://d.hatena.ne.jp/keyword/Microsoft">Microsoft</a>ネタがお蔵入りになったわけですが、2015年はもう少し発信のありかたを考えようかと思っています。コミュニティの繋がりがそこそこに楽しいので、<a class="keyword" href="http://d.hatena.ne.jp/keyword/Microsoft%20MVP">Microsoft MVP</a>自体は出来る限り続けていきたいと考えています。特に、ナデラがCEOになってからは、割と面白いことがいっぱい起きているので、しばらくは近くで様子を見ていたいといった次第です。<br />
+<br />
+</p>
+
+</div>
+<div class="section">
+    <h3>8月〜10月半ば : 登壇、司会業、エバンジェリズム</h3>
+    <p><img src="http://cdn-ak.f.st-hatena.com/images/fotolife/f/furoshiki0223/20150101/20150101235728.jpg" style="float:right;margin-left:10px;max-width:300px;">記事を書くことにも慣れてきた頃、今度は登壇ラッシュみたいなものが起きていました。プライベートでも仕事でも、登壇の準備をひたすら行なっていました。登壇と言っても、コミュニティレベルで無償でやるものから、お金を頂くものまで様々。相手も、がっちがちの<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A8%A5%F3%A5%BF%A1%BC%A5%D7%A5%E9%A5%A4%A5%BA">エンタープライズ</a>系の時もあれば、一人としてスーツの人がいない制作者向けのこともザラです。</p><p>大きな変化として、これまではパネルディスカッションという場ではパネラーとして参加することが多かったのですが、この時期からモデレーター(司会)側として参加することが多くなりました。</p><p>「<a href="http://event.shoeisha.jp/devsumi/20140731/">Developers Summit 2014 Summer(&#x7FD4;&#x6CF3;&#x793E;)</a>」では、<a class="keyword" href="http://d.hatena.ne.jp/keyword/IBM">IBM</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/Oracle">Oracle</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/Microsoft">Microsoft</a>、SAPと<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A8%A5%F3%A5%BF%A1%BC%A5%D7%A5%E9%A5%A4%A5%BA">エンタープライズ</a>・モバイル製品を扱うビッグ4を集め、私がモデレーターをさせて頂くという形でパネルを開きました。それだけでも世界初という事件なのですが、開催の直前に<a href="http://www.huffingtonpost.jp/techcrunch-japan/appleibm_b_5589693.html">IBM&#x304C;Apple&#x3068;&#x63D0;&#x643A;&#x3057;&#x305F;&#x308A;</a>、前日に<a class="keyword" href="http://d.hatena.ne.jp/keyword/Oracle">Oracle</a>がモバイル製品をアップデートするなど、力関係が大きく変わるような事件が起こり4社の関係は非常に殺伐としているのですが、それでもなお、なごやかな空気でパネルが進行するというとても奇妙な体験をさせていただきました。大人な人って、素晴らしいです！</p><p>また、「<a href="https://itmedia.smartseminar.jp/public/seminar/view/623">&#x7B2C;6&#x56DE;&#x696D;&#x958B;&#x4E2D;&#x5FC3;&#x4F1A;&#x8B70;(ITMedia)</a>」にも参加し、こちらでもモデレーターです。私のスケジュール調整ミスで、多大なご迷惑をおかけしましたが、パネラーのみなさんの素晴らしい実力のお陰で、無事に乗り切ることが出来ました。<a href="http://www.e4ei.net/">e4Ei</a>では<a class="keyword" href="http://d.hatena.ne.jp/keyword/HTML5">HTML5</a>セミナーを開いたのですが、迷子になって遅刻しかけたり(本当に焦りました)。</p><p><a href="https://www.hands-lab.com/contents/?p=692">&#x6771;&#x6025;&#x30CF;&#x30F3;&#x30BA;&#x306E;&#x9577;&#x8C37;&#x5DDD;&#x3055;&#x3093;&#x3068;&#x9152;&#x3092;&#x98F2;&#x3093;&#x3067;&#x3044;&#x305F;</a>ところ、たまたまUSPのトークになり、「<a href="http://ll.jus.or.jp/2014/">LL Diver</a>」にLTで登壇することに。技術的にはあまりにもバラツキが大きいため、完全にネタに走ろうとして時間切れするという事件が発生。<a class="keyword" href="http://d.hatena.ne.jp/keyword/%CD%AD%CC%C0">有明</a>まで行って、何をやっているんだろうか！と。こんな感じで、「時間」に関係した事件が多発していました。</p><p>この時期は、「<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A8%A5%D0%A5%F3%A5%B8%A5%A7%A5%EA%A5%B9%A5%C8">エバンジェリスト</a>」という肩書になることが何回かありました。そして毎回、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A8%A5%D0%A5%F3%A5%B8%A5%A7%A5%EA%A5%B9%A5%C8">エバンジェリスト</a>とは何なのか？と、その言葉の定義に悩むことも少なくありませんでした。技術の説明をすればいいのか？それでは、ただのセミナー講師です。では、技術の良さを説明して聴講者に使って貰えばいいのか？それだけでは、ただのセールスになってしまいます。では、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A8%A5%D0%A5%F3%A5%B8%A5%A7%A5%EA%A5%B9%A5%C8">エバンジェリスト</a>って一体何をする人なのか？</p><p>この前、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D1%A5%D6%A5%EA%A5%C3%A5%AF%A5%AF%A5%E9%A5%A6%A5%C9">パブリッククラウド</a><a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A8%A5%D0%A5%F3%A5%B8%A5%A7%A5%EA%A5%B9%A5%C8">エバンジェリスト</a>の<a href="http://blog.cloudninja.asia/">&#x5409;&#x7530;&#x30D1;&#x30AF;&#x3048;</a>さんと一年ぶりぐらいにお酒を飲んでいたのですが、彼がこう言っていました。</p><p>「<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A8%A5%D0%A5%F3%A5%B8%A5%A7%A5%EA%A5%B9%A5%C8">エバンジェリスト</a>というのは、その技術の未来が語れる人のことを言うんですよ。」</p><p>なるほど…ここまで納得する答えが返ってくるなんて、さすがは<a class="keyword" href="http://d.hatena.ne.jp/keyword/wikipedia">wikipedia</a>の「<a href="http://ja.wikipedia.org/wiki/%E3%82%A8%E3%83%90%E3%83%B3%E3%82%B8%E3%82%A7%E3%83%AA%E3%82%B9%E3%83%88">&#x30A8;&#x30D0;&#x30F3;&#x30B8;&#x30A7;&#x30EA;&#x30B9;&#x30C8;</a>」に例として名前が載るだけあるなぁなんて思いました。<br />
+<br />
+</p>
+
+</div>
+<div class="section">
+    <h3>10月半ば〜12月末 : 飲んだぐれ</h3>
+    <p><img src="http://cdn-ak.f.st-hatena.com/images/fotolife/f/furoshiki0223/20150101/20150102010627.jpg" style="float:right;margin-left:10px;max-width:300px;">10月頃から仕事が忙しくなり、コミュニティ活動ができない状況が続きました。12月は、ドリンク代が食費を上回るなんて日がザラにあって、寿命は間違いなく縮みましたが、不足していたプログラミング分を補充できて良かったです。</p><p>さてこの時期、全く何もしていなかったかといえばそうでもなく、「<a href="http://html5experts.jp/amurachi/10569/">&#x3076;&#x3063;&#x3061;&#x3083;&#x3051;&#x3069;&#x3046;&#x306A;&#x306E;&#x5EA7;&#x8AC7;&#x4F1A;</a>」を開いたり、「<a href="http://html5j.connpass.com/event/9435/">&#x7B2C;51&#x56DE;HTML5&#x3068;&#x304B;&#x52C9;&#x5F37;&#x4F1A;(html5j)</a>」で登壇したり、「<a href="http://7b543bd41af4571f0bdafff1b5.doorkeeper.jp/">&#x65E5;&#x672C;Cordova&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x4F1A;</a>」の立ち上げに関わったり、「<a href="http://abc.android-group.jp/2014w/">ABC 2014 Winter - Android Bazaar and Conference</a>」で登壇したり。また、私が2014年に書いた数少ないブログのエントリを読んで頂けたようで、「<a class="keyword" href="http://d.hatena.ne.jp/keyword/Microsoft%20MVP">Microsoft MVP</a> Open Day Japan」でパネルディスカッションに参加するなど。「コミュニティ活動最近出来てないなぁ」とかツイートしているくせに、それなりに楽しんではいました。</p><p>とはいえ、この時期はあまりイベントを作ったりとかそういう余裕が無かったので、基本は酒を飲むとか、酒抜きでミーティングとして話すとか、そういう「人に会うだけ」という機会が多くなりました。忘年会シーズンになると毎晩飲みが続きましたし、上半期にそれなりの量の寄稿をこなした結果、自分のブランドが明確になって、ちょっと話を聞いて欲しいなんてのがものすごく増えました。</p><p>お仕事の延長でお会いした人もかなり多く、世の中にはこれだけ色んな種類のエンジニアがいたのかと驚きました。ある女性エンジニアの方からは、有名な占い師に会いに行って、占いの最中その占いの<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A2%A5%EB%A5%B4%A5%EA%A5%BA%A5%E0">アルゴリズム</a>を解析してアプリ化できないか考えている、なんて話を聞きました。アプリ化した方が、ヒューマンエラーが入らないから占いが正確になる！なんて言ってて、男性には理解し難い<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A2%A5%EB%A5%B4%A5%EA%A5%BA%A5%E0">アルゴリズム</a>なんてものが、この世の中にはあるんだなあと驚かされました。</p><p>自分の住んでいる世界は狭い！なんてのは重々承知していたのですが、まさかここまで異なる<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%C9%A5%E1%A5%A4%A5%F3">ドメイン</a>があるとは思いもせず度肝を抜かされました。こういう、色んな人に会えるチャンスが得られるのも、寄稿のいいところなんでしょうね。<br />
+<br />
+</p>
+
+</div>
+<div class="section">
+    <h3>いよいよ2015年、川田は30才になります</h3>
+    <p>今年は30才になる、節目の年です。プライベートの面では「今年こそは本を書くぞ！！」と目標を宣言しつつ、仕事の面では2014年に学んだことを活かして一つ大きなアクションを起こしたいと考えています。</p><p>うちの会社的には「<a class="keyword" href="http://d.hatena.ne.jp/keyword/OSS">OSS</a>頑張るぞ！」と言わなくてはいけなくて、<a class="keyword" href="http://d.hatena.ne.jp/keyword/Github">Github</a>にpullする努力なんかが求められていたりします。ただ、個人的に<a class="keyword" href="http://d.hatena.ne.jp/keyword/OSS">OSS</a>しか見ない人になるのは時代遅れと感じてまして、どちらかと言えば、エコシステム全体をカバーするようなエンジニアになりたいと考えています。コミュニティも、ユーザー主体の団体からエコシステム主体の団体に変わりつつある中で、オープンという言葉の意味を慎重に見極めていく時代に入ったと感じています。そこで今、自分にできるのは、本という形のアウトプットだと考えています。</p><p>また、2014年は、記事を書いたり、イベントを作ったりすることも、プログラミングと同じぐらい楽しいと感じていて、ユーザが見えるモノ作りが好きだということを強く強く意識させられました。<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A8%A5%F3%A5%BF%A1%BC%A5%D7%A5%E9%A5%A4%A5%BA">エンタープライズ</a>の文句はあっちこっちから聞こえてきますが、そういうのとは全く関係なく、コンシューマーが使うプロダクトの方が私のモノ作りの感性に合っていると思うようになりました。際に今も、そういう仕事しかしていません。今後どうしていくのか、しばらくの間は模索が続きそうです。</p><p>30才、一体どんな感じなのか、さっぱり想像がつきません。ただ、おっさんと呼ばれる年齢なのは間違い無いので、ちゃんとおっさんとしての責務を果たすべく、少し後ろに続いている人たちを育てるような方向に、ちょっとぐらいは自分のキャラをシフトさせようかと思います。</p><p>それでは今年も、宜しくお願いします！</p>
+
+</div>
+        
+      
+    </div>
+    <footer class="entry-footer">
+      <p class="entry-footer-section">
+        <span class="author vcard"><span class="fn" data-load-nickname="1" data-user-name="furoshiki0223">furoshiki0223</span></span>
+        <span class="entry-footer-time"><a href="http://furoshiki.hatenadiary.jp/entry/2015/01/02/000121"><time data-relative datetime="2015-01-01T15:01:21Z" title="2015-01-01T15:01:21Z" pubdate class="updated">2015-01-02 00:01</time></a></span>
+      </p>
+
+      
+
+      
+<div class="social-buttons">
+  
+  
+    <a href="http://b.hatena.ne.jp/entry/http://furoshiki.hatenadiary.jp/entry/2015/01/02/000121" class="hatena-bookmark-button" data-hatena-bookmark-layout="vertical-balloon" data-hatena-bookmark-lang="ja" title="この記事をはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only.gif" alt="この記事をはてなブックマークに追加" width="20" height="20" style="border: none;" /></a>
+  
+  
+    <div class="fb-share-button" data-layout="box_count" data-href="http://furoshiki.hatenadiary.jp/entry/2015/01/02/000121"></div>
+  
+  
+    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://furoshiki.hatenadiary.jp/entry/2015/01/02/000121" data-count="vertical" data-text="ただのエンジニアがメディアや技術雑誌に寄稿するようになって思ったこと - 2014年振り返り - ふろしき.js" data-lang="ja">Tweet</a>
+  
+  
+    <div class="g-plusone" data-size="tall" data-href="http://furoshiki.hatenadiary.jp/entry/2015/01/02/000121"></div>
+  
+  
+  
+  
+</div>
+
+
+      
+        
+          
+          <div class="google-afc-image test-google-rectangle-ads blog_user_a">
+            
+            
+              <script>
+  var hatenadfp = hatenadfp || {};
+  hatenadfp.adUnits = hatenadfp.adUnits || [];
+  hatenadfp.adUnits.push(
+    
+      { unitName: 'blog_user', size: [[300, 250], [336, 280]], divId: 'google_afc_user_container_0', allowContentMatch: true }
+    
+  );
+  hatenadfp.isNGContent = false;
+  
+</script>
+
+              <div id="google_afc_user_container_0" class="google_afc_blocklink2_5 google_afc_boder"></div>
+              
+                <a href="http://blog.hatena.ne.jp/guide/pro" class="open-pro-modal" data-guide-pro-modal-ad-url="http://hatenablog.com/guide/pro/modal/ad">広告を非表示にする</a>
+              
+              
+            
+          </div>
+        
+      
+
+      <div class="customized-footer">
+
+        
+
+      </div>
+
+    </footer>
+  </div>
+</article>
+
+                
+
+                
+
+              
+            
+            <!-- rakuten_ad_target_end -->
+            <!-- google_ad_section_end -->
+
+            
+              <div class="pager autopagerize_insert_before">
+                <span class="pager-next">
+                  <a href="http://furoshiki.hatenadiary.jp/?page=1420124481" rel="next">次のページ</a>
+                </span>
+              </div>
+            
+          
+        </div>
+      </div>
+
+      
+      <aside id="box1">
+        <div id="box1-inner">
+        </div>
+      </aside>
+
+    </div><!-- #wrapper -->
+
+    <aside id="box2">
+  <div id="box2-inner">
+    
+      
+<div class="hatena-module hatena-module-html">
+    <div class="hatena-module-title">PR</div>
+  <div class="hatena-module-body">
+    <script type="text/javascript"><!--
+google_ad_client = "ca-pub-7484892735703483";
+/* right01 */
+google_ad_slot = "2472532057";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript"
+src="//pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+
+  </div>
+</div>
+
+    
+      
+
+<div class="hatena-module hatena-module-profile">
+  <div class="hatena-module-title">
+    筆者について
+  </div>
+  <div class="hatena-module-body">
+    
+
+    
+
+    
+    <div class="profile-description">
+      <p><img src="http://cdn-ak.f.st-hatena.com/images/fotolife/f/furoshiki0223/20130717/20130717023939.jpg" alt="川田寛" style="width:100px;float:right;margin:10px;border-radius:50px;" /><h4 style="display:inline;margin: 0 0;">川田 寛 (かわだ ひろし)</h4><p>エンタープライズITに関連するWeb技術とモバイルの情報を、中立な立場から発信するコミュニティ活動家をやっています。</p><p>本ブログの内容は、私が所属している企業の考えではありません。私は日本のエンタープライズITをより良くしたいと考えており、そこに繋がるような情報の発信を行なっています。このあたりにご理解頂けるのでしたら、本ブログの内容はいくらでも転載して頂いて構いません。何かご意見がありましたら、気軽にFacebookやTwitterで私にポストして下さい。</p><p>Profile : <a href="http://furoshiki.hatenadiary.jp/entry/self%E2%80%90introduction">Japanese</a>/<a href="http://hiroshik.info/">English</a></p></p>
+
+    </div>
+    
+
+    
+    <div class="hatena-follow-button-box btn-subscribe">
+      <a href="#" class="hatena-follow-button">
+        <span class="subscribing">
+          <span class="foreground">購読中です</span>
+          <span class="background">読者をやめる</span>
+        </span>
+        <span class="unsubscribing" data-track-name="profile-widget-subscribe-button" data-track-once>
+          <span class="foreground">読者になる</span>
+          <span class="background">読者になる</span>
+        </span>
+      </a>
+      <div class="subscription-count-box">
+        <i></i>
+        <u></u>
+        <span class="subscription-count">
+        </span>
+      </div>
+    </div>
+    
+
+    
+
+    
+
+    
+  </div>
+</div>
+
+    
+      
+<div class="hatena-module hatena-module-html">
+    <div class="hatena-module-title">PR</div>
+  <div class="hatena-module-body">
+    <script type="text/javascript"><!--
+google_ad_client = "ca-pub-7484892735703483";
+/* right02 */
+google_ad_slot = "3949265253";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript"
+src="//pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+
+  </div>
+</div>
+
+    
+      
+<div class="hatena-module hatena-module-html">
+    <div class="hatena-module-title">人気記事</div>
+  <div class="hatena-module-body">
+    <script language="javascript" type="text/javascript" src="http://b.hatena.ne.jp/js/widget.js" charset="utf-8"></script>
+<script language="javascript" type="text/javascript">
+Hatena.BookmarkWidget.url   = "http://furoshiki.hatenadiary.jp/";
+Hatena.BookmarkWidget.sort  = "count";
+Hatena.BookmarkWidget.width = 0;
+Hatena.BookmarkWidget.num   = 30;
+Hatena.BookmarkWidget.theme = "notheme";
+Hatena.BookmarkWidget.load();
+</script>
+<style>
+.hatena-bookmark-widget-title { display : none; }
+.hatena-bookmark-widget-footer { display : none; }
+</style>
+  </div>
+</div>
+
+    
+      
+<div class="hatena-module hatena-module-html">
+    <div class="hatena-module-title">PR</div>
+  <div class="hatena-module-body">
+    <script type="text/javascript"><!--
+google_ad_client = "ca-pub-7484892735703483";
+/* right03 */
+google_ad_slot = "8379464857";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript"
+src="//pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+  </div>
+</div>
+
+    
+      
+
+<div class="hatena-module hatena-module-archive" data-archive-type="default" data-archive-url="http://furoshiki.hatenadiary.jp/archive">
+  <div class="hatena-module-title">
+    <a href="http://furoshiki.hatenadiary.jp/archive">月別アーカイブ</a>
+  </div>
+  <div class="hatena-module-body">
+  </div>
+</div>
+
+    
+      
+<div class="hatena-module hatena-module-html">
+    <div class="hatena-module-title">PR</div>
+  <div class="hatena-module-body">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:600px"
+     data-ad-client="ca-pub-7484892735703483"
+     data-ad-slot="7632050857"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+  </div>
+</div>
+
+    
+      <div class="hatena-module hatena-module-recent-entries ">
+  <div class="hatena-module-title">
+    <a href="http://furoshiki.hatenadiary.jp/archive">
+      最新記事
+    </a>
+  </div>
+  <div class="hatena-module-body">
+    <ul class="recent-entries hatena-urllist ">
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+        
+        <a href="http://furoshiki.hatenadiary.jp/entry/2015/01/02/000121" class="urllist-title-link recent-entries-title-link          urllist-title recent-entries-title        ">ただのエンジニアがメディアや技術雑誌に寄稿するようになって思ったこと - 2014年振り返り        </a>
+        
+        
+
+              </div>
+    </li>
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+        
+        <a href="http://furoshiki.hatenadiary.jp/entry/2014/08/13/091711" class="urllist-title-link recent-entries-title-link          urllist-title recent-entries-title        ">モビリティは今、どのように進化しているのか？        </a>
+        
+        
+
+              </div>
+    </li>
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+        
+        <a href="http://furoshiki.hatenadiary.jp/entry/2014/08/11/122614" class="urllist-title-link recent-entries-title-link          urllist-title recent-entries-title        ">モビリティとは何か？企業にモバイルが求められる理由        </a>
+        
+        
+
+              </div>
+    </li>
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+        
+        <a href="http://furoshiki.hatenadiary.jp/entry/2014/07/30/092258" class="urllist-title-link recent-entries-title-link          urllist-title recent-entries-title        ">「2014年4月」はIEの歴史を動かした。そこから何が読み取れるのか？        </a>
+        
+        
+
+              </div>
+    </li>
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+        
+        <a href="http://furoshiki.hatenadiary.jp/entry/2014/07/29/091057" class="urllist-title-link recent-entries-title-link          urllist-title recent-entries-title        ">Google Chromeの開発者が語るこれからのWebに必要なこと、ちょっとした懸念点とか        </a>
+        
+        
+
+              </div>
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+    
+    
+  </div>
+</aside>
+
+  </div>
+</div>
+
+
+
+
+  <script type="text/javascript" src="http://b.hatena.ne.jp/js/hatena_dfp2.js"></script>
+
+
+
+        
+          <div id="bottom-editarea">
+            <div class="copyright"> - Copyright (C) 2013-2014 Hiroshi Kawada All Rights Reserved. - </div>
+
+          </div>
+        
+      </div>
+    </div>
+
+    
+      <footer id="footer" data-brand="hatenablog">
+  <div id="footer-inner">
+    <address>
+      
+      <a href="http://furoshiki.hatenadiary.jp/about"><img src="http://cdn1.www.st-hatena.com/users/fu/furoshiki0223/profile.gif" width="16" height="16" alt=""/>
+        <span data-load-nickname="1" data-user-name="furoshiki0223">furoshiki0223</span>
+      </a>
+    </address>
+    <p class="services">Powered by <a href="http://hatenablog.com/">Hatena Blog</a></p>
+  </div>
+</footer>
+
+    
+
+    
+
+    
+
+    <script type="text/javascript" src="https://platform.twitter.com/widgets.js"></script>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js">
+  {"parsetags": "explicit"}
+</script>
+<script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+<script type="text/javascript" src="http://blog.hatena.ne.jp/js?version=60d01f8cf9461f7a49d5085e3886b175"></script>
+<script type="text/javascript" src="http://blog.hatena.ne.jp/js/texts-ja.js?version=60d01f8cf9461f7a49d5085e3886b175"></script>
+
+
+  <script type="text/javascript">Hatena.Diary.loadGlobalHeader()</script>
+
+
+
+
+
+
+
+
+    
+      <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId=719729204785177&version=v2.0";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+    
+
+    
+       <script id="google-analytics-script" type="text/javascript">
+var _gaq = _gaq || [];
+
+(function($){
+
+  // 現在のドメイン
+  
+    
+    
+      
+      var current_domain = "hatenadiary.jp".split(":")[0];
+    
+  
+
+  
+    _gaq.push(['_setAccount', 'UA-42139732-1']);
+    _gaq.push(['_trackPageview']);
+  
+
+  
+
+   
+   _gaq.push(['all._setAccount', 'UA-7855606-1']);
+   _gaq.push(['all._setDomainName', current_domain]);
+   _gaq.push(['all._setSampleRate', '10']);
+   _gaq.push(['all._trackPageview']);
+
+  
+    _gaq.push(['a._setAccount', 'UA-29716941-5']);
+    _gaq.push(['a._setDomainName', current_domain]);
+    _gaq.push(['a._setCustomVar', 1, 'PageId', document.documentElement.getAttribute('data-page'), 3 /* page-level */]);
+      var keywordCampaigns = [];
+      $('.js-entry-article').each(function (index, element) {
+        var keywords = $(element).data('keywordCampaign').split(' ');
+        keywords = _.filter(keywords, function (keyword) { return keyword.length > 0 });
+        keywordCampaigns = keywordCampaigns.concat(keywords);
+      });
+      if (keywordCampaigns.length > 0) {
+        _gaq.push(['a._setCustomVar', 3, 'KeywordCampaign', keywordCampaigns[0], 3 /* page-level */]);
+      }
+      _gaq.push(['a._trackPageview']);
+  
+    _gaq.push(['b._setAccount', 'UA-29716941-2']);
+    _gaq.push(['b._setDomainName', current_domain]);
+    _gaq.push(['b._setCustomVar', 1, 'PageId', document.documentElement.getAttribute('data-page'), 3 /* page-level */]);
+      var keywordCampaigns = [];
+      $('.js-entry-article').each(function (index, element) {
+        var keywords = $(element).data('keywordCampaign').split(' ');
+        keywords = _.filter(keywords, function (keyword) { return keyword.length > 0 });
+        keywordCampaigns = keywordCampaigns.concat(keywords);
+      });
+      if (keywordCampaigns.length > 0) {
+        _gaq.push(['b._setCustomVar', 3, 'KeywordCampaign', keywordCampaigns[0], 3 /* page-level */]);
+      }
+      _gaq.push(['b._trackPageview']);
+  
+
+  $(function () {
+      $(document).delegate('[data-track-event="click"]', 'click', function () {
+          
+          _gaq.push([ 'a._trackEvent', 'Blogs', 'Click', this.getAttribute('data-track-key') ]);
+          
+          _gaq.push([ 'b._trackEvent', 'Blogs', 'Click', this.getAttribute('data-track-key') ]);
+          
+      });
+  });
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  var available_domains = ["blog.hatena.ne.jp"];
+  
+    available_domains.push("hatenablog.com".split(":")[0]);
+  
+    available_domains.push("hatenablog.jp".split(":")[0]);
+  
+    available_domains.push("hateblo.jp".split(":")[0]);
+  
+    available_domains.push("hatenadiary.com".split(":")[0]);
+  
+    available_domains.push("hatenadiary.jp".split(":")[0]);
+  
+  $('a').on('click', function() {
+    // 同じドメインならスキップ
+    if ( !this.hostname || this.hostname.indexOf(current_domain) != -1 ) return;
+
+    var cross_domain = false;
+    for (var i = 0, len = available_domains.length; i < len; i++) {
+      if (this.hostname.indexOf(available_domains[i]) != -1) cross_domain = true;
+    }
+    if ( cross_domain ) {
+      
+      _gaq.push(['a._link', this.href]);
+      
+      _gaq.push(['b._link', this.href]);
+      
+    }
+  });
+
+})(jQuery);
+</script>
+
+       
+
+  <script id="hatena-counter-script" type="text/javascript"><!--
+      hatena_counter_name = "furoshiki0223";
+      hatena_counter_id = "101";
+      hatena_counter_ref = document.referrer+"";
+      hatena_counter_screen = screen.width + "x" + screen.height+","+screen.colorDepth;
+  //--></script>
+  <script type="text/javascript" src="http://counter.hatena.ne.jp/js/counter.js"></script>
+  <noscript><img src="http://counter.hatena.ne.jp/furoshiki0223/101" border="0" alt="counter"></noscript>
+
+
+    
+
+  </body>
+</html>

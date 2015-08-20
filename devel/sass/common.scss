@@ -1,0 +1,536 @@
+/*********************************************************************************
+ * 本SCSSでは、「ふろしき.js(furoshiki.hatenadiary.jp)」のデザインを定義しています。
+ * 対象とする画面は以下の通りです。
+ *
+ *   エントリー型       (.entry>.entry-inner)
+ *     - トップ画面     /
+ *     - エントリ別画面 /entry/*******
+ *
+ *   アーカイブ型       (.archive-entries>.archive-entry)
+ *     - カテゴリ画面   /category/*****
+ *     - アーカイブ画面 /archive/category/****
+ *     - 検索結果画面   /search?q=*****
+ */
+
+/*********************************************************
+ * エントリー(左側)向けコンポーネントのビジュアルデザイン
+ */
+
+// 文章
+p {
+    line-height: 165%;
+    word-wrap: break-word;
+    text-indent : 1.0em;
+}
+// 画像ファイル
+img {
+    display : block;
+    max-width : 590px;
+    margin : 0 auto;
+}
+img.right,img.left {
+    width         : 300px;
+    margin-left   : 12px;
+    margin-bottom : 12px;
+}
+img.right {
+    float         : right;
+}
+img.left {
+    float         : left;
+}
+// テーブル
+table, td, th {
+    border: 1px #A4C4A4 solid;
+    border-spacing: 0px;
+}
+td, th {
+    padding : 4px;
+}
+th {
+    font-weight : bold;
+}
+.backIndex, .index, .reffer {
+    font-size : 80%;
+}
+// ソースコード
+.code {
+    border : 1px solid #AAA;
+    font-size : 80%;
+    padding : 15px;
+}
+a {
+    color : gray;
+}
+// 文章内リンク
+.keyword {
+    color : inherit;
+}
+// コンポーネント：関連記事
+.relationsTitle {
+    font-weight : bold;
+}
+.relations {
+    ul {
+        list-style : none;
+        padding : 0 0;
+        margin : 0 0;
+        li {
+            margin-bottom : 15px;
+            min-width : 200px;
+            display : block;
+            .summary {
+                word-break : break-all;
+                a {
+                    display :block;
+                    border-top : dotted 1px #AAA;
+                    padding : 5px;
+                    color: #042402;
+                    font-size: 100%;
+                    text-shadow: 1px 1px #FFF;
+                    &:hover {
+                        color : #AAA;
+                    }
+                }
+                .content {
+                  text-overflow:ellipsis;
+                  overflow:hidden;
+                  font-size : 75%;
+                  text-height : 100%;
+                  height : 38px;
+                  padding-left: 10px;
+                    padding-right: 10px;
+                  color : #777;
+                }
+            }
+        }
+    }
+}
+// コンポーネント：サブタイトル
+h3 {
+    border-bottom : 1px solid #449442;
+    border-left : 5px solid #449442;
+    color : #000;
+    text-shadow :
+        1px 1px #FFF;
+    padding-top : 5px;
+    padding-bottom : 10px;
+    padding-left : 10px;
+    margin-top : 20px;
+    letter-spacing: 0.1em;
+    line-height : 120%;
+    a {
+        font-weight : none;
+        text-decoration : none;
+        color : inherit;
+    }
+}
+
+.relationsTitle {
+    text-shadow :
+        1px 1px #FFF;
+    padding : 5px;
+    background: #84C482;
+    background: linear-gradient(top, #84C482, #FFFFFF);
+    font-weight : bold;
+}
+.relations {
+    border : 1px solid #DDD;
+    border-radius : 5px;
+    margin-bottom : 5px;
+}
+
+
+
+
+/*********************************************************
+ * サイドメニュー(右側)のビジュアルデザイン
+ */
+
+// 月別アーカイブ
+.archive-module-year-title,
+.archive-module-month-title,
+.archive-module-year-title:hover,
+.archive-module-month-title:hover,
+.hatena-urllist>li>a:hover {
+    text-decoration : underline;
+}
+// はてなブックマークのカラー
+.hatena-bookmark-count>strong>a {
+    background-color : yellow;
+    color : red;
+}
+// 最新記事
+.recent-entries {
+    margin :0;
+    padding: 0;
+    .urllist-item>.urllist-item-inner>a {
+        text-decoration : none;
+        &:hover {
+            text-decoration : underline;
+        }
+    }
+}
+
+
+/*********************************************************
+ * 画面全体のレイアウトとビジュアルデザイン
+ */
+body {
+    margin: 0px 10px;
+    padding: 0;
+    color: #313131;
+    font-family:  Meiryo, sans-serif;
+    background : #EFF6E0;
+    background: linear-gradient(top, #EFF6E0, #F9F9F9);
+    background-attachment : fixed;
+
+    // ブログの外枠ボックス
+    #container>#container-inner {
+        margin : 0 auto;
+        padding : 0px 10px;
+        width  : 960px;
+        min-height: 1000px;
+        background : #FFF;
+        box-shadow : 1px -1px 5px #DDD,-1px 1px 5px #DDD,1px 1px 5px #DDD,-1px -1px 5px #DDD;
+
+        // ブログのタイトル部分 ----------------
+        #blog-title {
+            margin-left : 5px;
+            margin-right : 5px;
+            background : #A4C4A4;
+            background: linear-gradient(top, #A4C4A4, #E4E4E4);
+            height : 120px;
+            border-left : silver 1px solid;
+            border-right : silver 1px solid;
+            #blog-title-inner {
+                width : 950px;
+                height : 120px;
+                background-position : right;
+                background-repeat: no-repeat;
+                background-image : url(http://cdn-ak.f.st-hatena.com/images/fotolife/f/furoshiki0223/20131008/20131008020118.png);
+                #title {
+                    margin : 0 0;
+                    padding : 0 0;
+                    width : 800px;   
+                    a {
+                        display : block;
+                        color : #045402;
+                        text-decoration: none;
+                        font-size : 100%;
+                        text-shadow : 1px 1px #FFF;
+                        margin-top : 0px;
+                        margin-left: 20px;
+                        padding-top : 40px;
+                    }
+                }
+                #blog-description {
+                    color : #045402;
+                    text-shadow : 1px 1px #FFF;
+                    margin-left: 20px;
+                    margin-top : 0px;
+                    font-size : 80%;
+                    font-weight: normal;
+                }
+            }
+        }
+
+        // トップのグローバルナビゲーション -------------
+        #top-editarea>#top-nav {
+            border-top : 1px solid #888;
+            border-bottom : 1px solid #888;
+            margin-left : 5px;
+            margin-right : 5px;
+            padding : 0 0;
+            .nav-item {
+                float : left;
+                display : block;
+                width : 20%;
+                text-align :center;
+                text-decoration: none;
+                background: #449442;
+                color : #FFF;
+                text-shadow :-1px 1px 1px #333;
+                font-weight : none;
+                div {
+                    padding : 5px 0px;
+                    border-right : 1px solid #247422;
+                }
+                &:hover {
+                    background: #348432;
+                }
+            }
+            &:after {
+                clear : both;
+                content : "";
+                display : block;    
+            }
+        }
+
+        // トップのソーシャルボタン -----------------
+        #top-editarea>#social {
+            border-bottom : 1px solid #CCC;
+            margin-left : 5px;
+            margin-right : 5px;
+            margin-bottom : 5px;
+            background : #F4F4F4;
+            height : 30px;
+            .social-button {
+                float:right;
+                display:block;
+                margin-left : 10px;
+            }
+            #googleplus {
+                margin-top : 5px;
+            }
+            #feedly {
+                margin-top : 5px;
+            }
+            #facebook {
+                margin-top : 5px;
+            }
+            #twitter {
+                margin-top : 5px;
+            }
+            #slideshare {
+                margin-top : 3px;
+            }
+            #googlesearch {
+                margin-top : 2px;
+            }
+            #feed>a {
+                display : block;
+                text-align : center;
+                width : 45px;
+                text-decoration : none;
+                color : #FFF;
+                font-size : 75%;
+                text-shadow : 
+                1px 1px 1px #000,
+                -1px 1px 1px #000,
+                1px -1px 1px #000,
+                -1px -1px 1px #000;
+                background-color : #3A3;
+                border-radius : 5px;
+                margin-top : 5px;
+                box-shadow : 0px 0px 3px #888;
+            }
+            #rss>a {
+                display : block;
+                text-align : center;
+                width : 40px;
+                text-decoration : none;
+                color : #FFF;
+                font-size : 75%;
+                text-shadow : 
+                1px 1px 1px #000,
+                -1px 1px 1px #000,
+                1px -1px 1px #000,
+                -1px -1px 1px #000;
+                background-color : #3A3;
+                border-radius : 5px;
+                margin-top : 5px;
+                box-shadow : 0px 0px 3px #888;
+            }
+            &:after {
+                clear : both;
+                content : "";
+                display : block;    
+            }
+        }
+
+        // ぱんくずリスト ---------------------
+        #top-box>.breadcrumb {
+            padding-left : 5px;
+            font-size : 90%;
+            div>a {
+                color : gray;
+                text-decoration : none;
+                &:hover {
+                    text-decoration : underline;
+                }
+            }
+        }
+
+        // 記事(左側) -------------------------
+        #content>#content-inner>#wrapper {
+            float : left;
+            padding : 15px;
+            width : 600px;
+            border-right : 1px solid #A4C4A4;
+            text-align : left;
+            #main>#main-inner>.pager {
+                background: #449442;
+                height : 24px;
+                width : 600px;
+                span>a {
+                    margin : 10px;
+                    text-decoration : none;
+                    color : #FFF;
+                    &:hover {
+                        color : #AAA;
+                    }
+                }
+                .pager-prev {
+                    display : block;
+                    float   : left;
+                }
+                .pager-next {
+                    display : block;
+                    float   : right;
+                }
+                &:after {
+                    clear : both;
+                    display : block;
+                    content : "";
+                }
+            }
+        }
+
+        // サイドメニュー(右側) ----------
+        #content>#content-inner>#box2 {
+            float : left;
+            padding : 10px;
+            width : 300px;
+            margin-left: 5px;
+            margin-top : 5px;
+            #box2-inner>.hatena-module {
+                .hatena-module-title {
+                    border-top : 1px solid #EFF6E0;
+                    color : #000;
+                    text-shadow : 1px 1px #FFF;
+                    padding-top : 1px;
+                    padding-bottom : 3px;
+                    font-weight : normal;
+                    font-size : 80%;
+                    a {
+                        text-decoration: none;
+                        color : inherit;
+                    }
+                }
+                .hatena-module-body {
+                    font-size : 80%;
+                    padding-bottom : 20px;
+                }
+            }
+        }
+
+        // フッター＆コピーライト -------------
+        #bottom-editarea {
+            clear : both;
+            font-size : 80%;
+            text-align : center;
+            padding-top : 15px;
+        }
+    }
+    // 全体のフッター -------------
+    #footer-inner{
+        font-size : 80%;
+        text-align : center;
+        margin-right : 30px;
+        margin-top : 30px;
+        address {
+            display : inline;
+            a {
+                img {
+                    display :inline;
+                }
+            }
+        }
+        p {
+            display : inline;
+        }
+    }
+}
+
+/*********************************************************
+ * エントリー/アーカイブのレイアウトとビジュアルデザイン
+ */
+.entry>.entry-inner>.entry-header,
+.archive-entries>.archive-entry {
+    min-height : 80px;
+    .date {
+        margin : 0 0;
+        padding : 0 0;
+        font-size: 100%;
+        font-weight : normal;
+        text-align:right;
+        a {
+            text-decoration: none;
+            font-size : 75%;
+            margin-right : 10px;
+            color : #444;
+            &:before {
+                display : inline;
+                content : "更新 :";
+                color : #444;
+            }
+        }
+    }
+    .entry-title {
+        padding-top:18px;
+        margin : 0 0;
+        margin-left : 10px;
+        line-height: 100%;
+        min-height : 50px;
+        margin-bottom: 25px;
+        a {
+            color : #042402;
+            text-decoration: none;
+            font-weight:normal;
+            line-height:125%;
+            font-size : 120%;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+    .categories {
+        text-align : right;
+        margin-top : 10px;
+        a {
+            color : gray;
+            font-size : 75%;
+        }
+        &:before {
+            color : gray;
+            font-size : 75%;
+            content : "カテゴリ：";
+            display : inline;
+        }
+    }
+}
+.entry>.entry-inner {
+    .entry-header {
+        .entry-header-menu {
+            position : absolute;
+            text-align : right;
+        }
+    }
+    .entry-footer {
+        .entry-footer-section {
+            display : none;
+        }
+        .social-buttons {
+            margin-bottom : 20px;
+            padding-top : 5px;
+            padding-bottom : 5px;
+            padding-left : 5px;
+            height : 50px;
+            text-align:right;
+            a>img {
+                display : none;
+            }
+        }
+        .customized-footer {
+            height : 50px;
+            padding-top : 50px;
+        }
+    }
+
+}
+.archive-entries>.archive-entry {
+    .social-buttons {
+        display : none;
+    }
+}
